@@ -1,0 +1,14 @@
+C:\Incubator\DatingApp\webApi\bin\Debug\netcoreapp2.2\DatingApp.deps.json
+C:\Incubator\DatingApp\webApi\bin\Debug\netcoreapp2.2\DatingApp.runtimeconfig.json
+C:\Incubator\DatingApp\webApi\bin\Debug\netcoreapp2.2\DatingApp.runtimeconfig.dev.json
+C:\Incubator\DatingApp\webApi\bin\Debug\netcoreapp2.2\DatingApp.dll
+C:\Incubator\DatingApp\webApi\bin\Debug\netcoreapp2.2\DatingApp.pdb
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.csprojAssemblyReference.cache
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.csproj.CoreCompileInputs.cache
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.RazorAssemblyInfo.cache
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.RazorAssemblyInfo.cs
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.AssemblyInfoInputs.cache
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.AssemblyInfo.cs
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.RazorTargetAssemblyInfo.cache
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.dll
+C:\Incubator\DatingApp\webApi\obj\Debug\netcoreapp2.2\DatingApp.pdb
