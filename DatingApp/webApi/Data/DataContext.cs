@@ -11,7 +11,7 @@ namespace webApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<User>().ToTable("Users");
+             modelBuilder.Entity<User>().ToTable("Users");
             modelBuilder.Entity<Setting>().ToTable("Settings");
             modelBuilder.Entity<Message>().ToTable("Messages");
 

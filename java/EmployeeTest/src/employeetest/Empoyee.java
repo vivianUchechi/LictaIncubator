@@ -54,4 +54,12 @@ public class Empoyee {
             
       return salary;
     }
+    
+    public double increase(double increase)
+    {
+      salary = salary  + (salary * .2);
+      return salary ;
+
+    }
+    
 }

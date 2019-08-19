@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using webApi.Data;
 using webApi.Data.Model;
+using webApi.DTO;
 
 namespace DatingApp.Controllers
 {
@@ -20,21 +21,48 @@ namespace DatingApp.Controllers
 
         }
 
-        // GET api/values
-        [HttpGet]
+    
+
+
+    // GET api/values
+       /*  [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
             var users = _context.Users;
             return Ok(users);
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
+*/
+        // GET api/values
+         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            var users = _context.Users;
+            var users = _context.Users.Where((user)=> user.Id == id ).FirstOrDefault();
             return Ok(users);
         }
+
+         [HttpGet("femaleGender")]
+         public ActionResult<string> Get()
+        {
+            var users = _context.Users.Where((user)=> user.Gender == "female").ToList();
+            return Ok(users);
+        }
+
+          [HttpGet("maleGender")]
+         public ActionResult<string> Get(string male)
+        {
+            var users = _context.Users.Where((user)=> user.Gender == "male").ToArray();
+            return Ok(users);
+        }
+
+         [HttpGet("pass")]
+         public ActionResult<string> Get(UserModel model )
+        {
+            string username = model.UserName;
+            string password = model.Password;
+            var users = _context.Users.Where((user)=> (user.UserName == username & user.Password == password)).FirstOrDefault();
+            return Ok(users);
+        }
+
 
         // POST api/values
         [HttpPost]

@@ -31,8 +31,6 @@ namespace webApi.Data
            
         }
 
-        private class DateTime
-        {
-        }
+       
     }
 }

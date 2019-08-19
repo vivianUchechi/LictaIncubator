@@ -9,7 +9,7 @@ using webApi.Data;
 namespace DatingApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190816140728_init")]
+    [Migration("20190819122429_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
