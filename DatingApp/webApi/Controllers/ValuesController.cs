@@ -75,15 +75,30 @@ namespace DatingApp.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public  IActionResult Put(User used)
         {
-        }
+             User user = _context.Users.Where((User)=>User.Id== used.Id).FirstOrDefault();
+             user.FirstName = used.FirstName;
+             user.LastName = used.LastName;
+             user.DateOfBirth = used.DateOfBirth;
+             user.Email = used.Email;
+             user.Gender = used.Gender;
+             user.Password = used.Password;
+             user.UserName = used.UserName;
+            _context.Update(user);
+             _context.SaveChanges();
+             return Ok("Done");
+        } 
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            User user = _context.Users.Where((User)=>User.Id== id).FirstOrDefault();
+          _context.Remove(user);
+             _context.SaveChanges();
+             return NoContent();
         }
     }
 }
