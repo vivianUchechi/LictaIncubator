@@ -41,21 +41,21 @@ namespace DatingApp.Controllers
         }
 
          [HttpGet("femaleGender")]
-         public ActionResult<string> Get()
+         public IActionResult Get()
         {
             var users = _context.Users.Where((user)=> user.Gender == "female").ToList();
             return Ok(users);
         }
 
           [HttpGet("maleGender")]
-         public ActionResult<string> Get(string male)
+         public IActionResult Get(string male)
         {
             var users = _context.Users.Where((user)=> user.Gender == "male").ToArray();
             return Ok(users);
         }
 
          [HttpGet("pass")]
-         public ActionResult<string> Get(UserModel model )
+         public IActionResult Get(UserModel model )
         {
             string username = model.UserName;
             string password = model.Password;

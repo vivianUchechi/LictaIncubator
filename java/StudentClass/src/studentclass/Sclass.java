@@ -50,7 +50,7 @@ public class Sclass {
     
     public String getletterGrade()
     {
-       String letterGrade ;
+       String letterGrade = "";
        
        if (studentAverage >= 90.0 )
        letterGrade = "A";
