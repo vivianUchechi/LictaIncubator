@@ -97,6 +97,7 @@ namespace DatingApp.Controllers
         {
             User user = _context.Users.Where((User)=>User.Id== id).FirstOrDefault();
           _context.Remove(user);
+
              _context.SaveChanges();
              return NoContent();
         }
